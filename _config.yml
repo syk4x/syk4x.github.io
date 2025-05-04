@@ -42,7 +42,7 @@ social:
     - https://github.com/syk4x # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    # - https://www.linkedin.com/in/amon-mwagala-1064a0319
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar:https://avatars.githubusercontent.com/u/210061532?s=400&u=f1652df39e3c810f487bbda89c11d3b10edb232f&v=4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
