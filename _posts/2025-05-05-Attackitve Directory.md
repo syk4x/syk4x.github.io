@@ -1,3 +1,12 @@
+---
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 4
+---
+<!-- icon 	order
+fas fa-info-circle -->
+
+
 # Enumeration
 
 ```php
@@ -128,8 +137,7 @@ $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:ab26d8d89927724852bd1c0d655dfe1d$844cd55
 fa13a970800ab4e4d01578ae5223956f7988b0b1c253cf3d4fdadfbfa857cbeca2de93f43d11948c7e12ba101d75817e885dff5ab315e0c51355cb4b2ee27d62a0b77a5a8c6085d200f59398784758cba1126ee3169819d6ddff3d423d5a56
 1486c5b2b292bc9455b76d24aea79d27f6d54c7f37cb4da68749717cf80b25ffce128332aa407088907374a82e7e525e133105c5e5ae56ba63c9f5133191e5ce378ce719384145297c872934d7ebde3a6861c0854c9ccd37a
 ```
-
-![image.png](attachment:f0fabf1b-2b8c-433a-9dda-d54c9e1bf427:image.png)
+![Alt text](image.png)
 
 Cracking the hash using john
 
