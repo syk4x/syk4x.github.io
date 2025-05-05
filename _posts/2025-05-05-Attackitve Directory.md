@@ -316,8 +316,14 @@ We have bunch of users here..now lets read them to get the remaining flags
 
 # For svc-admin
 
-![Screenshot](../../../assets/screenshots/Attactive-Directory/7.webp)
+![Screenshots](../../../assets/screenshots/Attactive-Directory/7.webp)
 
 # Boom..!!
 
-![Screenshot](../../../assets/screenshots/Attactive-Directory/8.webp)
+![Screenshots][def]
+ffdgdfgfdg
+kykuy
+kyh
+```php
+utyuyuyuyyuut   
+```
