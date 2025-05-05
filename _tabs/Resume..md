@@ -14,7 +14,7 @@ I'm syk4x, a passionate Red Team enthusiast specializing in offensive security. 
 
 Experience
 
-    Cyber Security Specialist  - e-Government Authority {July 2024 - Present} {:.prompt-tip}
+    Cyber Security Specialist  - e-Government Authority (eGA) {July 2024 - Present} 
 
 
 Certifications
